@@ -185,7 +185,14 @@ function Box({ children }) {
 			>
 				{isOpen ? "–" : "+"}
 			</button>
-			{isOpen && <div ref={box}>{children}</div>}
+			{isOpen && (
+				<div
+					ref={box}
+					style={{ overflowY: "auto" }}
+				>
+					{children}
+				</div>
+			)}
 		</div>
 	);
 }
