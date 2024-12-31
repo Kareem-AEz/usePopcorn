@@ -27,7 +27,7 @@ const API_KEY = "b1330894";
 // App -->
 export default function App() {
 	// states->
-	const [query, setQuery] = useState("the purge");
+	const [query, setQuery] = useState("");
 	/*
 	// const [watched, setWatched] = useState(() => {
 	// 	const fetchedWatchedMovies = JSON.parse(
